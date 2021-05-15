@@ -22,7 +22,7 @@ let pincode = process.env.NKT_PINCODE
 let day = moment().format("DD-MM-YYYY");
 // 14-05-2021
 
-let url = `https://cdn-api.co-vin.in/api/v2/appointment/sessions/public/calendarByPin?pincode=${pincode}&date=14-05-2021`
+let url = `https://cdn-api.co-vin.in/api/v2/appointment/sessions/public/calendarByPin?pincode=${pincode}&date=${day}`
 
 var config = {
   method: 'get',
