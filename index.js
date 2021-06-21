@@ -33,7 +33,6 @@ var config = {
   }
 };
 
-// console.log(`https://cdn-api.co-vin.in/api/v2/appointment/sessions/public/calendarByPin?pincode=332713&date=${day}`);
 axios(config)
   .then(function(response) {
 
@@ -48,7 +47,7 @@ axios(config)
 
       for (let i = 0; i < n; i++) {
         let date = sessions[i].date
-        let available_capacity = sessions[i].available_capacity
+        let available_capacity = sessions[i].available_capacity_dose1
         let min_age_limit = sessions[i].min_age_limit
         var formatted_date = moment(date, 'DD-MM-YYYY').format('LL');
 

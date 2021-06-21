@@ -48,7 +48,7 @@ pincodes.forEach(pincode => {
 
         for (let i = 0; i < n; i++) {
           let date = sessions[i].date
-          let available_capacity = sessions[i].available_capacity
+          let available_capacity = sessions[i].available_capacity_dose1
           let min_age_limit = sessions[i].min_age_limit
           var formatted_date = moment(date, 'DD-MM-YYYY').format('LL');
 
